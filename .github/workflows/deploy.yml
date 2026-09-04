@@ -19,4 +19,4 @@ jobs:
 
       - name: Restart Application
         run: |
-          pm2 restart all || pm2 start app.js  # (లేదా మీ server start command)
+          /usr/bin/pm2 restart all || /usr/bin/pm2 start app.js  # (లేదా మీ server start command)
