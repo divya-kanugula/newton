@@ -15,7 +15,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd newton && npm install   # (లేదా మీ application deployment/build command)
+          npm install   # (లేదా మీ application deployment/build command)
 
       - name: Restart Application
         run: |
