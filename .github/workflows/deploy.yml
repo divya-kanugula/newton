@@ -11,11 +11,11 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: npm install   # (లేదా మీ application deployment/build command)
 
       - name: Restart Application
         run: |
-          /usr/bin/pm2 restart all || /usr/bin/pm2 start app.js  # (లేదా మీ server start command)
+          pm2 restart all || pm2 start app.js  # (లేదా మీ server start command)
